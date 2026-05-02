@@ -209,7 +209,7 @@ Return ONLY the JSON array.`;
       }
 
       const data = await response.json();
-      const text = data.text || "";
+      const text = data.result || "";
 
       setProgress("正在分析篩選結果...");
       const parsed = parseStocksFromResponse(text);
